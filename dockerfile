@@ -4,7 +4,10 @@ FROM node:alpine
 RUN apk add --nocache \
     autoconf \
     automake \
-    build-base
+    build-base \
+    libass-dev \
+    freetype-dev \
+    libtheora-dev
 
 EXPOSE 3000
 
