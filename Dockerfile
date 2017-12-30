@@ -6,7 +6,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositori
 
 RUN apk update
 
-RUN apk add \
+RUN apk add --no-cache \
     autoconf \
     automake \
     build-base \
