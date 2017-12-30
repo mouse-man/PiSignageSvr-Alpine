@@ -3,7 +3,8 @@ FROM node:alpine
 # Install Dependencies
 RUN apk add --nocache \
     autoconf \
-    automake
+    automake \
+    build-base
 
 EXPOSE 3000
 
