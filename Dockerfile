@@ -43,6 +43,10 @@ RUN apk add --no-cache \
 RUN git clone -b update-socketio https://github.com/pschmitt/pisignage-server /usr/src/app && \
     cd /usr/src/app 
 
+RUN node -v
+
+RUN npm -v
+
 EXPOSE 3000
 
 WORKDIR /usr/src/app
